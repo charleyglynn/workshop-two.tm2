@@ -1,0 +1,969 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE Map[]>
+<Map srs="+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0.0 +k=1.0 +units=m +nadgrids=@null +wktext +no_defs +over" background-image="img/linedpaper.png" font-directory="fonts/">
+
+<Parameters>
+  <Parameter name="attribution"><![CDATA[(c) Ordnance Survey 2015]]></Parameter>
+  <Parameter name="bounds">-180,-85.0511,180,85.0511</Parameter>
+  <Parameter name="center">-3.1869,55.9488,15</Parameter>
+  <Parameter name="description"><![CDATA[Now, let's make an awesome map with OS Open Map - Local]]></Parameter>
+  <Parameter name="format">png8:m=h</Parameter>
+  <Parameter name="maxzoom">19</Parameter>
+  <Parameter name="minzoom">14</Parameter>
+  <Parameter name="name"><![CDATA[workshop two]]></Parameter>
+  <Parameter name="source"><![CDATA[mapbox:///workshops.cc54b1f4]]></Parameter>
+</Parameters>
+
+
+<Style name="tidalwater" filter-mode="first" comp-op="multiply">
+  <Rule>
+    <Filter>([HTMLNAME] = 'Corstorphine Hill')</Filter>
+    <PolygonSymbolizer fill="#edf5f6" />
+    <PointSymbolizer file="img/coffee-stain.png" ignore-placement="true" opacity="0.6" comp-op="multiply" />
+  </Rule>
+  <Rule>
+    <Filter>([HTMLNAME] = 'Broomhills Cottages')</Filter>
+    <PolygonSymbolizer fill="#edf5f6" />
+    <PointSymbolizer file="img/coffee-stain.png" ignore-placement="true" opacity="0.6" comp-op="multiply" />
+  </Rule>
+  <Rule>
+    <PolygonSymbolizer fill="#edf5f6" />
+  </Rule>
+</Style>
+<Layer name="tidalwater"
+  srs="+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0.0 +k=1.0 +units=m +nadgrids=@null +wktext +no_defs +over">
+    <StyleName>tidalwater</StyleName>  </Layer>
+
+<Style name="foreshore" filter-mode="first" comp-op="multiply">
+  <Rule>
+    <Filter>([HTMLNAME] = 'Corstorphine Hill')</Filter>
+    <PolygonSymbolizer fill="#f6f3c9" fill-opacity="0.4" />
+    <PointSymbolizer file="img/coffee-stain.png" ignore-placement="true" opacity="0.6" comp-op="multiply" />
+  </Rule>
+  <Rule>
+    <Filter>([HTMLNAME] = 'Broomhills Cottages')</Filter>
+    <PolygonSymbolizer fill="#f6f3c9" fill-opacity="0.4" />
+    <PointSymbolizer file="img/coffee-stain.png" ignore-placement="true" opacity="0.6" comp-op="multiply" />
+  </Rule>
+  <Rule>
+    <PolygonSymbolizer fill="#f6f3c9" fill-opacity="0.4" />
+  </Rule>
+</Style>
+<Layer name="foreshore"
+  srs="+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0.0 +k=1.0 +units=m +nadgrids=@null +wktext +no_defs +over">
+    <StyleName>foreshore</StyleName>  </Layer>
+
+<Style name="functionalsite" filter-mode="first">
+  <Rule>
+    <Filter>([FEATCODE] = 15812) and ([HTMLNAME] = 'Corstorphine Hill')</Filter>
+    <PolygonSymbolizer fill="#aef2e6" fill-opacity="0.2" />
+    <PointSymbolizer file="img/coffee-stain.png" ignore-placement="true" opacity="0.6" comp-op="multiply" />
+  </Rule>
+  <Rule>
+    <Filter>([FEATCODE] = 15812) and ([HTMLNAME] = 'Broomhills Cottages')</Filter>
+    <PolygonSymbolizer fill="#aef2e6" fill-opacity="0.2" />
+    <PointSymbolizer file="img/coffee-stain.png" ignore-placement="true" opacity="0.6" comp-op="multiply" />
+  </Rule>
+  <Rule>
+    <Filter>([FEATCODE] = 15812)</Filter>
+    <PolygonSymbolizer fill="#aef2e6" fill-opacity="0.2" />
+  </Rule>
+  <Rule>
+    <Filter>([FEATCODE] = 15811) and ([HTMLNAME] = 'Corstorphine Hill')</Filter>
+    <PolygonSymbolizer fill="#f2aeae" fill-opacity="0.2" />
+    <PointSymbolizer file="img/coffee-stain.png" ignore-placement="true" opacity="0.6" comp-op="multiply" />
+  </Rule>
+  <Rule>
+    <Filter>([FEATCODE] = 15811) and ([HTMLNAME] = 'Broomhills Cottages')</Filter>
+    <PolygonSymbolizer fill="#f2aeae" fill-opacity="0.2" />
+    <PointSymbolizer file="img/coffee-stain.png" ignore-placement="true" opacity="0.6" comp-op="multiply" />
+  </Rule>
+  <Rule>
+    <Filter>([FEATCODE] = 15811)</Filter>
+    <PolygonSymbolizer fill="#f2aeae" fill-opacity="0.2" />
+  </Rule>
+  <Rule>
+    <Filter>([FEATCODE] = 15810) and ([HTMLNAME] = 'Corstorphine Hill')</Filter>
+    <PolygonSymbolizer fill="#f2d3ae" fill-opacity="0.2" />
+    <PointSymbolizer file="img/coffee-stain.png" ignore-placement="true" opacity="0.6" comp-op="multiply" />
+  </Rule>
+  <Rule>
+    <Filter>([FEATCODE] = 15810) and ([HTMLNAME] = 'Broomhills Cottages')</Filter>
+    <PolygonSymbolizer fill="#f2d3ae" fill-opacity="0.2" />
+    <PointSymbolizer file="img/coffee-stain.png" ignore-placement="true" opacity="0.6" comp-op="multiply" />
+  </Rule>
+  <Rule>
+    <Filter>([FEATCODE] = 15810)</Filter>
+    <PolygonSymbolizer fill="#f2d3ae" fill-opacity="0.2" />
+  </Rule>
+  <Rule>
+    <Filter>([FEATCODE] = 15809) and ([HTMLNAME] = 'Corstorphine Hill')</Filter>
+    <PolygonSymbolizer fill="#d7d7c6" fill-opacity="0.2" />
+    <PointSymbolizer file="img/coffee-stain.png" ignore-placement="true" opacity="0.6" comp-op="multiply" />
+  </Rule>
+  <Rule>
+    <Filter>([FEATCODE] = 15809) and ([HTMLNAME] = 'Broomhills Cottages')</Filter>
+    <PolygonSymbolizer fill="#d7d7c6" fill-opacity="0.2" />
+    <PointSymbolizer file="img/coffee-stain.png" ignore-placement="true" opacity="0.6" comp-op="multiply" />
+  </Rule>
+  <Rule>
+    <Filter>([FEATCODE] = 15809)</Filter>
+    <PolygonSymbolizer fill="#d7d7c6" fill-opacity="0.2" />
+  </Rule>
+  <Rule>
+    <Filter>([HTMLNAME] = 'Corstorphine Hill')</Filter>
+    <PolygonSymbolizer fill-opacity="0.2" />
+    <PointSymbolizer file="img/coffee-stain.png" ignore-placement="true" opacity="0.6" comp-op="multiply" />
+  </Rule>
+  <Rule>
+    <Filter>([HTMLNAME] = 'Broomhills Cottages')</Filter>
+    <PolygonSymbolizer fill-opacity="0.2" />
+    <PointSymbolizer file="img/coffee-stain.png" ignore-placement="true" opacity="0.6" comp-op="multiply" />
+  </Rule>
+  <Rule>
+    <PolygonSymbolizer fill-opacity="0.2" />
+  </Rule>
+</Style>
+<Layer name="functionalsite"
+  srs="+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0.0 +k=1.0 +units=m +nadgrids=@null +wktext +no_defs +over">
+    <StyleName>functionalsite</StyleName>  </Layer>
+
+<Style name="woodland" filter-mode="first" comp-op="multiply">
+  <Rule>
+    <MaxScaleDenominator>12500</MaxScaleDenominator>
+    <Filter>([HTMLNAME] = 'Corstorphine Hill')</Filter>
+    <PolygonSymbolizer fill="#eef6ed" />
+    <LineSymbolizer stroke-width="1" stroke="#073911" stroke-opacity="0.2" geometry-transform="skewX(1)" smooth="1" />
+    <PointSymbolizer file="img/coffee-stain.png" ignore-placement="true" opacity="0.6" comp-op="multiply" />
+  </Rule>
+  <Rule>
+    <MinScaleDenominator>12500</MinScaleDenominator>
+    <Filter>([HTMLNAME] = 'Corstorphine Hill')</Filter>
+    <PolygonSymbolizer fill="#eef6ed" />
+    <PointSymbolizer file="img/coffee-stain.png" ignore-placement="true" opacity="0.6" comp-op="multiply" />
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>12500</MaxScaleDenominator>
+    <Filter>([HTMLNAME] = 'Broomhills Cottages')</Filter>
+    <PolygonSymbolizer fill="#eef6ed" />
+    <LineSymbolizer stroke-width="1" stroke="#073911" stroke-opacity="0.2" geometry-transform="skewX(1)" smooth="1" />
+    <PointSymbolizer file="img/coffee-stain.png" ignore-placement="true" opacity="0.6" comp-op="multiply" />
+  </Rule>
+  <Rule>
+    <MinScaleDenominator>12500</MinScaleDenominator>
+    <Filter>([HTMLNAME] = 'Broomhills Cottages')</Filter>
+    <PolygonSymbolizer fill="#eef6ed" />
+    <PointSymbolizer file="img/coffee-stain.png" ignore-placement="true" opacity="0.6" comp-op="multiply" />
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>12500</MaxScaleDenominator>
+    <PolygonSymbolizer fill="#eef6ed" />
+    <LineSymbolizer stroke-width="1" stroke="#073911" stroke-opacity="0.2" geometry-transform="skewX(1)" smooth="1" />
+  </Rule>
+  <Rule>
+    <MinScaleDenominator>12500</MinScaleDenominator>
+    <PolygonSymbolizer fill="#eef6ed" />
+  </Rule>
+</Style>
+<Layer name="woodland"
+  srs="+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0.0 +k=1.0 +units=m +nadgrids=@null +wktext +no_defs +over">
+    <StyleName>woodland</StyleName>  </Layer>
+
+<Style name="surfacewaterarea" filter-mode="first" comp-op="multiply">
+  <Rule>
+    <Filter>([HTMLNAME] = 'Corstorphine Hill')</Filter>
+    <PolygonSymbolizer fill="#edf5f6" />
+    <LineSymbolizer stroke-width="1.2" stroke="#02125d" stroke-opacity="0.4" smooth="1.5" />
+    <PointSymbolizer file="img/coffee-stain.png" ignore-placement="true" opacity="0.6" comp-op="multiply" />
+  </Rule>
+  <Rule>
+    <Filter>([HTMLNAME] = 'Broomhills Cottages')</Filter>
+    <PolygonSymbolizer fill="#edf5f6" />
+    <LineSymbolizer stroke-width="1.2" stroke="#02125d" stroke-opacity="0.4" smooth="1.5" />
+    <PointSymbolizer file="img/coffee-stain.png" ignore-placement="true" opacity="0.6" comp-op="multiply" />
+  </Rule>
+  <Rule>
+    <PolygonSymbolizer fill="#edf5f6" />
+    <LineSymbolizer stroke-width="1.2" stroke="#02125d" stroke-opacity="0.4" smooth="1.5" />
+  </Rule>
+</Style>
+<Layer name="surfacewaterarea"
+  srs="+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0.0 +k=1.0 +units=m +nadgrids=@null +wktext +no_defs +over">
+    <StyleName>surfacewaterarea</StyleName>  </Layer>
+
+<Style name="tidalboundary" filter-mode="first">
+  <Rule>
+    <Filter>([HTMLNAME] = 'Corstorphine Hill')</Filter>
+    <LineSymbolizer stroke-width="1" stroke="#02125d" stroke-opacity="0.3" smooth="3" />
+    <PointSymbolizer file="img/coffee-stain.png" ignore-placement="true" opacity="0.6" comp-op="multiply" />
+  </Rule>
+  <Rule>
+    <Filter>([HTMLNAME] = 'Broomhills Cottages')</Filter>
+    <LineSymbolizer stroke-width="1" stroke="#02125d" stroke-opacity="0.3" smooth="3" />
+    <PointSymbolizer file="img/coffee-stain.png" ignore-placement="true" opacity="0.6" comp-op="multiply" />
+  </Rule>
+  <Rule>
+    <LineSymbolizer stroke-width="1" stroke="#02125d" stroke-opacity="0.3" smooth="3" />
+  </Rule>
+</Style>
+<Layer name="tidalboundary"
+  srs="+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0.0 +k=1.0 +units=m +nadgrids=@null +wktext +no_defs +over">
+    <StyleName>tidalboundary</StyleName>  </Layer>
+
+<Style name="surfacewaterline" filter-mode="first">
+  <Rule>
+    <Filter>([HTMLNAME] = 'Corstorphine Hill')</Filter>
+    <LineSymbolizer stroke-width="1.5" stroke="#02125d" stroke-opacity="0.4" smooth="2" />
+    <PointSymbolizer file="img/coffee-stain.png" ignore-placement="true" opacity="0.6" comp-op="multiply" />
+  </Rule>
+  <Rule>
+    <Filter>([HTMLNAME] = 'Broomhills Cottages')</Filter>
+    <LineSymbolizer stroke-width="1.5" stroke="#02125d" stroke-opacity="0.4" smooth="2" />
+    <PointSymbolizer file="img/coffee-stain.png" ignore-placement="true" opacity="0.6" comp-op="multiply" />
+  </Rule>
+  <Rule>
+    <LineSymbolizer stroke-width="1.5" stroke="#02125d" stroke-opacity="0.4" smooth="2" />
+  </Rule>
+</Style>
+<Layer name="surfacewaterline"
+  srs="+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0.0 +k=1.0 +units=m +nadgrids=@null +wktext +no_defs +over">
+    <StyleName>surfacewaterline</StyleName>  </Layer>
+
+<Style name="building" filter-mode="first" comp-op="multiply">
+  <Rule>
+    <Filter>([HTMLNAME] = 'Corstorphine Hill')</Filter>
+    <PolygonSymbolizer fill="#f8eee2" smooth="0.3" />
+    <PointSymbolizer file="img/coffee-stain.png" ignore-placement="true" opacity="0.6" comp-op="multiply" />
+  </Rule>
+  <Rule>
+    <Filter>([HTMLNAME] = 'Broomhills Cottages')</Filter>
+    <PolygonSymbolizer fill="#f8eee2" smooth="0.3" />
+    <PointSymbolizer file="img/coffee-stain.png" ignore-placement="true" opacity="0.6" comp-op="multiply" />
+  </Rule>
+  <Rule>
+    <PolygonSymbolizer fill="#f8eee2" smooth="0.3" />
+  </Rule>
+</Style>
+<Layer name="building"
+  srs="+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0.0 +k=1.0 +units=m +nadgrids=@null +wktext +no_defs +over">
+    <StyleName>building</StyleName>  </Layer>
+
+<Style name="importantbuilding" filter-mode="first" comp-op="multiply">
+  <Rule>
+    <MaxScaleDenominator>25000</MaxScaleDenominator>
+    <Filter>([HTMLNAME] = 'Corstorphine Hill')</Filter>
+    <PolygonSymbolizer fill="#f8eee2" smooth="0.3" />
+    <LineSymbolizer stroke="#0d0d0e" stroke-width="1.3" stroke-opacity="0.3" smooth="0.5" />
+    <PointSymbolizer file="img/coffee-stain.png" ignore-placement="true" opacity="0.6" comp-op="multiply" />
+  </Rule>
+  <Rule>
+    <MinScaleDenominator>25000</MinScaleDenominator>
+    <Filter>([HTMLNAME] = 'Corstorphine Hill')</Filter>
+    <PolygonSymbolizer fill="#f8eee2" smooth="0.3" />
+    <PointSymbolizer file="img/coffee-stain.png" ignore-placement="true" opacity="0.6" comp-op="multiply" />
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>25000</MaxScaleDenominator>
+    <Filter>([HTMLNAME] = 'Broomhills Cottages')</Filter>
+    <PolygonSymbolizer fill="#f8eee2" smooth="0.3" />
+    <LineSymbolizer stroke="#0d0d0e" stroke-width="1.3" stroke-opacity="0.3" smooth="0.5" />
+    <PointSymbolizer file="img/coffee-stain.png" ignore-placement="true" opacity="0.6" comp-op="multiply" />
+  </Rule>
+  <Rule>
+    <MinScaleDenominator>25000</MinScaleDenominator>
+    <Filter>([HTMLNAME] = 'Broomhills Cottages')</Filter>
+    <PolygonSymbolizer fill="#f8eee2" smooth="0.3" />
+    <PointSymbolizer file="img/coffee-stain.png" ignore-placement="true" opacity="0.6" comp-op="multiply" />
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>25000</MaxScaleDenominator>
+    <PolygonSymbolizer fill="#f8eee2" smooth="0.3" />
+    <LineSymbolizer stroke="#0d0d0e" stroke-width="1.3" stroke-opacity="0.3" smooth="0.5" />
+  </Rule>
+  <Rule>
+    <MinScaleDenominator>25000</MinScaleDenominator>
+    <PolygonSymbolizer fill="#f8eee2" smooth="0.3" />
+  </Rule>
+</Style>
+<Layer name="importantbuilding"
+  srs="+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0.0 +k=1.0 +units=m +nadgrids=@null +wktext +no_defs +over">
+    <StyleName>importantbuilding</StyleName>  </Layer>
+
+<Style name="road" filter-mode="first">
+  <Rule>
+    <MaxScaleDenominator>12500</MaxScaleDenominator>
+    <Filter>([HTMLNAME] = 'Corstorphine Hill')</Filter>
+    <LineSymbolizer stroke="#0d0d0e" stroke-opacity="0.3" />
+    <LineSymbolizer stroke="#0d0d0e" stroke-opacity="0.4" smooth="0.5" />
+    <LineSymbolizer stroke="#0d0d0e" stroke-opacity="0.4" smooth="1.5" offset="-1" />
+    <LineSymbolizer stroke-opacity="0.3" smooth="2.5" offset="2" />
+    <PointSymbolizer file="img/coffee-stain.png" ignore-placement="true" opacity="0.6" comp-op="multiply" />
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>25000</MaxScaleDenominator>
+    <MinScaleDenominator>12500</MinScaleDenominator>
+    <Filter>([HTMLNAME] = 'Corstorphine Hill')</Filter>
+    <LineSymbolizer stroke="#0d0d0e" stroke-opacity="0.3" />
+    <LineSymbolizer stroke="#0d0d0e" stroke-opacity="0.4" smooth="0.5" />
+    <LineSymbolizer stroke="#0d0d0e" stroke-opacity="0.4" smooth="1.5" offset="-1" />
+    <PointSymbolizer file="img/coffee-stain.png" ignore-placement="true" opacity="0.6" comp-op="multiply" />
+  </Rule>
+  <Rule>
+    <MinScaleDenominator>25000</MinScaleDenominator>
+    <Filter>([HTMLNAME] = 'Corstorphine Hill')</Filter>
+    <LineSymbolizer stroke="#0d0d0e" stroke-opacity="0.3" />
+    <LineSymbolizer stroke="#0d0d0e" stroke-opacity="0.4" smooth="0.5" />
+    <PointSymbolizer file="img/coffee-stain.png" ignore-placement="true" opacity="0.6" comp-op="multiply" />
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>12500</MaxScaleDenominator>
+    <Filter>([HTMLNAME] = 'Broomhills Cottages')</Filter>
+    <LineSymbolizer stroke="#0d0d0e" stroke-opacity="0.3" />
+    <LineSymbolizer stroke="#0d0d0e" stroke-opacity="0.4" smooth="0.5" />
+    <LineSymbolizer stroke="#0d0d0e" stroke-opacity="0.4" smooth="1.5" offset="-1" />
+    <LineSymbolizer stroke-opacity="0.3" smooth="2.5" offset="2" />
+    <PointSymbolizer file="img/coffee-stain.png" ignore-placement="true" opacity="0.6" comp-op="multiply" />
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>25000</MaxScaleDenominator>
+    <MinScaleDenominator>12500</MinScaleDenominator>
+    <Filter>([HTMLNAME] = 'Broomhills Cottages')</Filter>
+    <LineSymbolizer stroke="#0d0d0e" stroke-opacity="0.3" />
+    <LineSymbolizer stroke="#0d0d0e" stroke-opacity="0.4" smooth="0.5" />
+    <LineSymbolizer stroke="#0d0d0e" stroke-opacity="0.4" smooth="1.5" offset="-1" />
+    <PointSymbolizer file="img/coffee-stain.png" ignore-placement="true" opacity="0.6" comp-op="multiply" />
+  </Rule>
+  <Rule>
+    <MinScaleDenominator>25000</MinScaleDenominator>
+    <Filter>([HTMLNAME] = 'Broomhills Cottages')</Filter>
+    <LineSymbolizer stroke="#0d0d0e" stroke-opacity="0.3" />
+    <LineSymbolizer stroke="#0d0d0e" stroke-opacity="0.4" smooth="0.5" />
+    <PointSymbolizer file="img/coffee-stain.png" ignore-placement="true" opacity="0.6" comp-op="multiply" />
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>12500</MaxScaleDenominator>
+    <LineSymbolizer stroke="#0d0d0e" stroke-opacity="0.3" />
+    <LineSymbolizer stroke="#0d0d0e" stroke-opacity="0.4" smooth="0.5" />
+    <LineSymbolizer stroke="#0d0d0e" stroke-opacity="0.4" smooth="1.5" offset="-1" />
+    <LineSymbolizer stroke-opacity="0.3" smooth="2.5" offset="2" />
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>25000</MaxScaleDenominator>
+    <MinScaleDenominator>12500</MinScaleDenominator>
+    <LineSymbolizer stroke="#0d0d0e" stroke-opacity="0.3" />
+    <LineSymbolizer stroke="#0d0d0e" stroke-opacity="0.4" smooth="0.5" />
+    <LineSymbolizer stroke="#0d0d0e" stroke-opacity="0.4" smooth="1.5" offset="-1" />
+  </Rule>
+  <Rule>
+    <MinScaleDenominator>25000</MinScaleDenominator>
+    <LineSymbolizer stroke="#0d0d0e" stroke-opacity="0.3" />
+    <LineSymbolizer stroke="#0d0d0e" stroke-opacity="0.4" smooth="0.5" />
+  </Rule>
+</Style>
+<Layer name="road"
+  srs="+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0.0 +k=1.0 +units=m +nadgrids=@null +wktext +no_defs +over">
+    <StyleName>road</StyleName>  </Layer>
+
+<Style name="railwaytrack" filter-mode="first">
+  <Rule>
+    <Filter>([HTMLNAME] = 'Corstorphine Hill')</Filter>
+    <LineSymbolizer stroke-width="2" stroke="#6f0707" stroke-opacity="0.6" smooth="1" />
+    <LineSymbolizer stroke-width="2" stroke="#6f0707" stroke-opacity="0.4" smooth="2" />
+    <PointSymbolizer file="img/coffee-stain.png" ignore-placement="true" opacity="0.6" comp-op="multiply" />
+  </Rule>
+  <Rule>
+    <Filter>([HTMLNAME] = 'Broomhills Cottages')</Filter>
+    <LineSymbolizer stroke-width="2" stroke="#6f0707" stroke-opacity="0.6" smooth="1" />
+    <LineSymbolizer stroke-width="2" stroke="#6f0707" stroke-opacity="0.4" smooth="2" />
+    <PointSymbolizer file="img/coffee-stain.png" ignore-placement="true" opacity="0.6" comp-op="multiply" />
+  </Rule>
+  <Rule>
+    <LineSymbolizer stroke-width="2" stroke="#6f0707" stroke-opacity="0.6" smooth="1" />
+    <LineSymbolizer stroke-width="2" stroke="#6f0707" stroke-opacity="0.4" smooth="2" />
+  </Rule>
+</Style>
+<Layer name="railwaytrack"
+  srs="+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0.0 +k=1.0 +units=m +nadgrids=@null +wktext +no_defs +over">
+    <StyleName>railwaytrack</StyleName>  </Layer>
+
+<Style name="railwaytunnel" filter-mode="first">
+  <Rule>
+    <Filter>([HTMLNAME] = 'Corstorphine Hill')</Filter>
+    <LineSymbolizer stroke-width="2" stroke-dasharray="8, 4" stroke="#6f0707" stroke-opacity="0.4" />
+    <PointSymbolizer file="img/coffee-stain.png" ignore-placement="true" opacity="0.6" comp-op="multiply" />
+  </Rule>
+  <Rule>
+    <Filter>([HTMLNAME] = 'Broomhills Cottages')</Filter>
+    <LineSymbolizer stroke-width="2" stroke-dasharray="8, 4" stroke="#6f0707" stroke-opacity="0.4" />
+    <PointSymbolizer file="img/coffee-stain.png" ignore-placement="true" opacity="0.6" comp-op="multiply" />
+  </Rule>
+  <Rule>
+    <LineSymbolizer stroke-width="2" stroke-dasharray="8, 4" stroke="#6f0707" stroke-opacity="0.4" />
+  </Rule>
+</Style>
+<Layer name="railwaytunnel"
+  srs="+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0.0 +k=1.0 +units=m +nadgrids=@null +wktext +no_defs +over">
+    <StyleName>railwaytunnel</StyleName>  </Layer>
+
+<Style name="railwaystation" filter-mode="first">
+  <Rule>
+    <MaxScaleDenominator>5000</MaxScaleDenominator>
+    <Filter>([HTMLNAME] = 'Corstorphine Hill')</Filter>
+    <MarkersSymbolizer file="img/station.svg" opacity="0.9" />
+    <TextSymbolizer face-name="Biro Script reduced Regular" fill="#0d0d0e" size="25" dx="17" dy="-10" halo-fill="#ffffff" halo-radius="2" orientation="15" ><![CDATA[[DISTNAME]]]></TextSymbolizer>
+    <PointSymbolizer file="img/coffee-stain.png" ignore-placement="true" opacity="0.6" comp-op="multiply" />
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>25000</MaxScaleDenominator>
+    <MinScaleDenominator>5000</MinScaleDenominator>
+    <Filter>([HTMLNAME] = 'Corstorphine Hill')</Filter>
+    <MarkersSymbolizer file="img/station.svg" opacity="0.9" />
+    <PointSymbolizer file="img/coffee-stain.png" ignore-placement="true" opacity="0.6" comp-op="multiply" />
+  </Rule>
+  <Rule>
+    <MinScaleDenominator>25000</MinScaleDenominator>
+    <Filter>([HTMLNAME] = 'Corstorphine Hill')</Filter>
+    <PointSymbolizer file="img/coffee-stain.png" ignore-placement="true" opacity="0.6" comp-op="multiply" />
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>5000</MaxScaleDenominator>
+    <Filter>([HTMLNAME] = 'Broomhills Cottages')</Filter>
+    <MarkersSymbolizer file="img/station.svg" opacity="0.9" />
+    <TextSymbolizer face-name="Biro Script reduced Regular" fill="#0d0d0e" size="25" dx="17" dy="-10" halo-fill="#ffffff" halo-radius="2" orientation="15" ><![CDATA[[DISTNAME]]]></TextSymbolizer>
+    <PointSymbolizer file="img/coffee-stain.png" ignore-placement="true" opacity="0.6" comp-op="multiply" />
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>25000</MaxScaleDenominator>
+    <MinScaleDenominator>5000</MinScaleDenominator>
+    <Filter>([HTMLNAME] = 'Broomhills Cottages')</Filter>
+    <MarkersSymbolizer file="img/station.svg" opacity="0.9" />
+    <PointSymbolizer file="img/coffee-stain.png" ignore-placement="true" opacity="0.6" comp-op="multiply" />
+  </Rule>
+  <Rule>
+    <MinScaleDenominator>25000</MinScaleDenominator>
+    <Filter>([HTMLNAME] = 'Broomhills Cottages')</Filter>
+    <PointSymbolizer file="img/coffee-stain.png" ignore-placement="true" opacity="0.6" comp-op="multiply" />
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>5000</MaxScaleDenominator>
+    <MarkersSymbolizer file="img/station.svg" opacity="0.9" />
+    <TextSymbolizer face-name="Biro Script reduced Regular" fill="#0d0d0e" size="25" dx="17" dy="-10" halo-fill="#ffffff" halo-radius="2" orientation="15" ><![CDATA[[DISTNAME]]]></TextSymbolizer>
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>25000</MaxScaleDenominator>
+    <MinScaleDenominator>5000</MinScaleDenominator>
+    <MarkersSymbolizer file="img/station.svg" opacity="0.9" />
+  </Rule>
+</Style>
+<Layer name="railwaystation"
+  srs="+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0.0 +k=1.0 +units=m +nadgrids=@null +wktext +no_defs +over">
+    <StyleName>railwaystation</StyleName>  </Layer>
+
+<Style name="namedplace" filter-mode="first">
+  <Rule>
+    <Filter>([FONTHEIGHT] = 'Large') and ([FEATCODE] = 15805) and ([HTMLNAME] = 'Salisbury Crags')</Filter>
+    <PointSymbolizer file="img/coffee-stain.png" ignore-placement="true" opacity="0.6" comp-op="multiply" />
+    <TextSymbolizer size="30" fill="#57575d" face-name="DoodlePenLimited Regular" halo-fill="#ffffff" halo-radius="2" halo-opacity="0.8" orientation="[ORIENTATIO]" ><![CDATA[[HTMLNAME]]]></TextSymbolizer>
+  </Rule>
+  <Rule>
+    <Filter>([FONTHEIGHT] = 'Large') and ([FEATCODE] = 15805) and ([HTMLNAME] = 'Corstorphine Hill')</Filter>
+    <PointSymbolizer file="img/coffee-stain.png" ignore-placement="true" opacity="0.6" comp-op="multiply" />
+    <TextSymbolizer size="30" fill="#57575d" face-name="DoodlePenLimited Regular" halo-fill="#ffffff" halo-radius="2" halo-opacity="0.8" orientation="[ORIENTATIO]" ><![CDATA[[HTMLNAME]]]></TextSymbolizer>
+  </Rule>
+  <Rule>
+    <Filter>([FONTHEIGHT] = 'Large') and ([FEATCODE] = 15805) and ([HTMLNAME] = 'Broomhills Cottages')</Filter>
+    <PointSymbolizer file="img/coffee-stain.png" ignore-placement="true" opacity="0.6" comp-op="multiply" />
+    <TextSymbolizer size="30" fill="#57575d" face-name="DoodlePenLimited Regular" halo-fill="#ffffff" halo-radius="2" halo-opacity="0.8" orientation="[ORIENTATIO]" ><![CDATA[[HTMLNAME]]]></TextSymbolizer>
+  </Rule>
+  <Rule>
+    <Filter>([FONTHEIGHT] = 'Large') and ([FEATCODE] = 15805)</Filter>
+    <TextSymbolizer size="30" fill="#57575d" face-name="DoodlePenLimited Regular" halo-fill="#ffffff" halo-radius="2" halo-opacity="0.8" orientation="[ORIENTATIO]" ><![CDATA[[HTMLNAME]]]></TextSymbolizer>
+  </Rule>
+  <Rule>
+    <Filter>([FONTHEIGHT] = 'Large') and ([FEATCODE] = 15804) and ([HTMLNAME] = 'Salisbury Crags')</Filter>
+    <PointSymbolizer file="img/coffee-stain.png" ignore-placement="true" opacity="0.6" comp-op="multiply" />
+    <TextSymbolizer size="30" fill="#0425c1" face-name="DoodlePenLimited Regular" halo-fill="#ffffff" halo-radius="2" halo-opacity="0.8" orientation="[ORIENTATIO]" ><![CDATA[[HTMLNAME]]]></TextSymbolizer>
+  </Rule>
+  <Rule>
+    <Filter>([FONTHEIGHT] = 'Large') and ([FEATCODE] = 15804) and ([HTMLNAME] = 'Corstorphine Hill')</Filter>
+    <PointSymbolizer file="img/coffee-stain.png" ignore-placement="true" opacity="0.6" comp-op="multiply" />
+    <TextSymbolizer size="30" fill="#0425c1" face-name="DoodlePenLimited Regular" halo-fill="#ffffff" halo-radius="2" halo-opacity="0.8" orientation="[ORIENTATIO]" ><![CDATA[[HTMLNAME]]]></TextSymbolizer>
+  </Rule>
+  <Rule>
+    <Filter>([FONTHEIGHT] = 'Large') and ([FEATCODE] = 15804) and ([HTMLNAME] = 'Broomhills Cottages')</Filter>
+    <PointSymbolizer file="img/coffee-stain.png" ignore-placement="true" opacity="0.6" comp-op="multiply" />
+    <TextSymbolizer size="30" fill="#0425c1" face-name="DoodlePenLimited Regular" halo-fill="#ffffff" halo-radius="2" halo-opacity="0.8" orientation="[ORIENTATIO]" ><![CDATA[[HTMLNAME]]]></TextSymbolizer>
+  </Rule>
+  <Rule>
+    <Filter>([FONTHEIGHT] = 'Large') and ([FEATCODE] = 15804)</Filter>
+    <TextSymbolizer size="30" fill="#0425c1" face-name="DoodlePenLimited Regular" halo-fill="#ffffff" halo-radius="2" halo-opacity="0.8" orientation="[ORIENTATIO]" ><![CDATA[[HTMLNAME]]]></TextSymbolizer>
+  </Rule>
+  <Rule>
+    <Filter>([FONTHEIGHT] = 'Large') and ([FEATCODE] = 15803) and ([HTMLNAME] = 'Salisbury Crags')</Filter>
+    <PointSymbolizer file="img/coffee-stain.png" ignore-placement="true" opacity="0.6" comp-op="multiply" />
+    <TextSymbolizer size="30" fill="#073911" orientation="7" face-name="DoodlePenLimited Regular" halo-fill="#ffffff" halo-radius="2" halo-opacity="0.8" ><![CDATA[[HTMLNAME]]]></TextSymbolizer>
+  </Rule>
+  <Rule>
+    <Filter>([FONTHEIGHT] = 'Large') and ([FEATCODE] = 15803) and ([HTMLNAME] = 'Corstorphine Hill')</Filter>
+    <PointSymbolizer file="img/coffee-stain.png" ignore-placement="true" opacity="0.6" comp-op="multiply" />
+    <TextSymbolizer size="30" fill="#073911" orientation="7" face-name="DoodlePenLimited Regular" halo-fill="#ffffff" halo-radius="2" halo-opacity="0.8" ><![CDATA[[HTMLNAME]]]></TextSymbolizer>
+  </Rule>
+  <Rule>
+    <Filter>([FONTHEIGHT] = 'Large') and ([FEATCODE] = 15803) and ([HTMLNAME] = 'Broomhills Cottages')</Filter>
+    <PointSymbolizer file="img/coffee-stain.png" ignore-placement="true" opacity="0.6" comp-op="multiply" />
+    <TextSymbolizer size="30" fill="#073911" orientation="7" face-name="DoodlePenLimited Regular" halo-fill="#ffffff" halo-radius="2" halo-opacity="0.8" ><![CDATA[[HTMLNAME]]]></TextSymbolizer>
+  </Rule>
+  <Rule>
+    <Filter>([FONTHEIGHT] = 'Large') and ([FEATCODE] = 15803)</Filter>
+    <TextSymbolizer size="30" fill="#073911" orientation="7" face-name="DoodlePenLimited Regular" halo-fill="#ffffff" halo-radius="2" halo-opacity="0.8" ><![CDATA[[HTMLNAME]]]></TextSymbolizer>
+  </Rule>
+  <Rule>
+    <Filter>([FONTHEIGHT] = 'Large') and ([FEATCODE] = 15802) and ([HTMLNAME] = 'Salisbury Crags')</Filter>
+    <PointSymbolizer file="img/coffee-stain.png" ignore-placement="true" opacity="0.6" comp-op="multiply" />
+    <TextSymbolizer size="30" fill="#0d0d0e" face-name="DoodlePenLimited Regular" halo-fill="#ffffff" halo-radius="2" halo-opacity="0.8" orientation="[ORIENTATIO]" ><![CDATA[[HTMLNAME]]]></TextSymbolizer>
+  </Rule>
+  <Rule>
+    <Filter>([FONTHEIGHT] = 'Large') and ([FEATCODE] = 15802) and ([HTMLNAME] = 'Corstorphine Hill')</Filter>
+    <PointSymbolizer file="img/coffee-stain.png" ignore-placement="true" opacity="0.6" comp-op="multiply" />
+    <TextSymbolizer size="30" fill="#0d0d0e" face-name="DoodlePenLimited Regular" halo-fill="#ffffff" halo-radius="2" halo-opacity="0.8" orientation="[ORIENTATIO]" ><![CDATA[[HTMLNAME]]]></TextSymbolizer>
+  </Rule>
+  <Rule>
+    <Filter>([FONTHEIGHT] = 'Large') and ([FEATCODE] = 15802) and ([HTMLNAME] = 'Broomhills Cottages')</Filter>
+    <PointSymbolizer file="img/coffee-stain.png" ignore-placement="true" opacity="0.6" comp-op="multiply" />
+    <TextSymbolizer size="30" fill="#0d0d0e" face-name="DoodlePenLimited Regular" halo-fill="#ffffff" halo-radius="2" halo-opacity="0.8" orientation="[ORIENTATIO]" ><![CDATA[[HTMLNAME]]]></TextSymbolizer>
+  </Rule>
+  <Rule>
+    <Filter>([FONTHEIGHT] = 'Large') and ([FEATCODE] = 15802)</Filter>
+    <TextSymbolizer size="30" fill="#0d0d0e" face-name="DoodlePenLimited Regular" halo-fill="#ffffff" halo-radius="2" halo-opacity="0.8" orientation="[ORIENTATIO]" ><![CDATA[[HTMLNAME]]]></TextSymbolizer>
+  </Rule>
+  <Rule>
+    <Filter>([FONTHEIGHT] = 'Large') and ([FEATCODE] = 15801) and ([HTMLNAME] = 'Salisbury Crags')</Filter>
+    <PointSymbolizer file="img/coffee-stain.png" ignore-placement="true" opacity="0.6" comp-op="multiply" />
+    <TextSymbolizer size="30" fill="#02125d" orientation="4" face-name="DoodlePenLimited Regular" halo-fill="#ffffff" halo-radius="2" halo-opacity="0.8" ><![CDATA[[HTMLNAME]]]></TextSymbolizer>
+  </Rule>
+  <Rule>
+    <Filter>([FONTHEIGHT] = 'Large') and ([FEATCODE] = 15801) and ([HTMLNAME] = 'Corstorphine Hill')</Filter>
+    <PointSymbolizer file="img/coffee-stain.png" ignore-placement="true" opacity="0.6" comp-op="multiply" />
+    <TextSymbolizer size="30" fill="#02125d" orientation="4" face-name="DoodlePenLimited Regular" halo-fill="#ffffff" halo-radius="2" halo-opacity="0.8" ><![CDATA[[HTMLNAME]]]></TextSymbolizer>
+  </Rule>
+  <Rule>
+    <Filter>([FONTHEIGHT] = 'Large') and ([FEATCODE] = 15801) and ([HTMLNAME] = 'Broomhills Cottages')</Filter>
+    <PointSymbolizer file="img/coffee-stain.png" ignore-placement="true" opacity="0.6" comp-op="multiply" />
+    <TextSymbolizer size="30" fill="#02125d" orientation="4" face-name="DoodlePenLimited Regular" halo-fill="#ffffff" halo-radius="2" halo-opacity="0.8" ><![CDATA[[HTMLNAME]]]></TextSymbolizer>
+  </Rule>
+  <Rule>
+    <Filter>([FONTHEIGHT] = 'Large') and ([FEATCODE] = 15801)</Filter>
+    <TextSymbolizer size="30" fill="#02125d" orientation="4" face-name="DoodlePenLimited Regular" halo-fill="#ffffff" halo-radius="2" halo-opacity="0.8" ><![CDATA[[HTMLNAME]]]></TextSymbolizer>
+  </Rule>
+  <Rule>
+    <Filter>([FONTHEIGHT] = 'Large') and ([HTMLNAME] = 'Salisbury Crags')</Filter>
+    <PointSymbolizer file="img/coffee-stain.png" ignore-placement="true" opacity="0.6" comp-op="multiply" />
+    <TextSymbolizer size="30" face-name="DoodlePenLimited Regular" halo-fill="#ffffff" halo-radius="2" halo-opacity="0.8" orientation="[ORIENTATIO]" ><![CDATA[[HTMLNAME]]]></TextSymbolizer>
+  </Rule>
+  <Rule>
+    <Filter>([FONTHEIGHT] = 'Large') and ([HTMLNAME] = 'Corstorphine Hill')</Filter>
+    <PointSymbolizer file="img/coffee-stain.png" ignore-placement="true" opacity="0.6" comp-op="multiply" />
+    <TextSymbolizer size="30" face-name="DoodlePenLimited Regular" halo-fill="#ffffff" halo-radius="2" halo-opacity="0.8" orientation="[ORIENTATIO]" ><![CDATA[[HTMLNAME]]]></TextSymbolizer>
+  </Rule>
+  <Rule>
+    <Filter>([FONTHEIGHT] = 'Large') and ([HTMLNAME] = 'Broomhills Cottages')</Filter>
+    <PointSymbolizer file="img/coffee-stain.png" ignore-placement="true" opacity="0.6" comp-op="multiply" />
+    <TextSymbolizer size="30" face-name="DoodlePenLimited Regular" halo-fill="#ffffff" halo-radius="2" halo-opacity="0.8" orientation="[ORIENTATIO]" ><![CDATA[[HTMLNAME]]]></TextSymbolizer>
+  </Rule>
+  <Rule>
+    <Filter>([FONTHEIGHT] = 'Large')</Filter>
+    <TextSymbolizer size="30" face-name="DoodlePenLimited Regular" halo-fill="#ffffff" halo-radius="2" halo-opacity="0.8" orientation="[ORIENTATIO]" ><![CDATA[[HTMLNAME]]]></TextSymbolizer>
+  </Rule>
+  <Rule>
+    <Filter>([FONTHEIGHT] = 'Medium') and ([FEATCODE] = 15805) and ([HTMLNAME] = 'Salisbury Crags')</Filter>
+    <PointSymbolizer file="img/coffee-stain.png" ignore-placement="true" opacity="0.6" comp-op="multiply" />
+    <TextSymbolizer size="16" fill="#57575d" face-name="DoodlePenLimited Regular" halo-fill="#ffffff" halo-radius="2" halo-opacity="0.8" orientation="[ORIENTATIO]" ><![CDATA[[HTMLNAME]]]></TextSymbolizer>
+  </Rule>
+  <Rule>
+    <Filter>([FONTHEIGHT] = 'Medium') and ([FEATCODE] = 15805) and ([HTMLNAME] = 'Corstorphine Hill')</Filter>
+    <PointSymbolizer file="img/coffee-stain.png" ignore-placement="true" opacity="0.6" comp-op="multiply" />
+    <TextSymbolizer size="16" fill="#57575d" face-name="DoodlePenLimited Regular" halo-fill="#ffffff" halo-radius="2" halo-opacity="0.8" orientation="[ORIENTATIO]" ><![CDATA[[HTMLNAME]]]></TextSymbolizer>
+  </Rule>
+  <Rule>
+    <Filter>([FONTHEIGHT] = 'Medium') and ([FEATCODE] = 15805) and ([HTMLNAME] = 'Broomhills Cottages')</Filter>
+    <PointSymbolizer file="img/coffee-stain.png" ignore-placement="true" opacity="0.6" comp-op="multiply" />
+    <TextSymbolizer size="16" fill="#57575d" face-name="DoodlePenLimited Regular" halo-fill="#ffffff" halo-radius="2" halo-opacity="0.8" orientation="[ORIENTATIO]" ><![CDATA[[HTMLNAME]]]></TextSymbolizer>
+  </Rule>
+  <Rule>
+    <Filter>([FONTHEIGHT] = 'Medium') and ([FEATCODE] = 15805)</Filter>
+    <TextSymbolizer size="16" fill="#57575d" face-name="DoodlePenLimited Regular" halo-fill="#ffffff" halo-radius="2" halo-opacity="0.8" orientation="[ORIENTATIO]" ><![CDATA[[HTMLNAME]]]></TextSymbolizer>
+  </Rule>
+  <Rule>
+    <Filter>([FONTHEIGHT] = 'Medium') and ([FEATCODE] = 15804) and ([HTMLNAME] = 'Salisbury Crags')</Filter>
+    <PointSymbolizer file="img/coffee-stain.png" ignore-placement="true" opacity="0.6" comp-op="multiply" />
+    <TextSymbolizer size="16" fill="#0425c1" face-name="DoodlePenLimited Regular" halo-fill="#ffffff" halo-radius="2" halo-opacity="0.8" orientation="[ORIENTATIO]" ><![CDATA[[HTMLNAME]]]></TextSymbolizer>
+  </Rule>
+  <Rule>
+    <Filter>([FONTHEIGHT] = 'Medium') and ([FEATCODE] = 15804) and ([HTMLNAME] = 'Corstorphine Hill')</Filter>
+    <PointSymbolizer file="img/coffee-stain.png" ignore-placement="true" opacity="0.6" comp-op="multiply" />
+    <TextSymbolizer size="16" fill="#0425c1" face-name="DoodlePenLimited Regular" halo-fill="#ffffff" halo-radius="2" halo-opacity="0.8" orientation="[ORIENTATIO]" ><![CDATA[[HTMLNAME]]]></TextSymbolizer>
+  </Rule>
+  <Rule>
+    <Filter>([FONTHEIGHT] = 'Medium') and ([FEATCODE] = 15804) and ([HTMLNAME] = 'Broomhills Cottages')</Filter>
+    <PointSymbolizer file="img/coffee-stain.png" ignore-placement="true" opacity="0.6" comp-op="multiply" />
+    <TextSymbolizer size="16" fill="#0425c1" face-name="DoodlePenLimited Regular" halo-fill="#ffffff" halo-radius="2" halo-opacity="0.8" orientation="[ORIENTATIO]" ><![CDATA[[HTMLNAME]]]></TextSymbolizer>
+  </Rule>
+  <Rule>
+    <Filter>([FONTHEIGHT] = 'Medium') and ([FEATCODE] = 15804)</Filter>
+    <TextSymbolizer size="16" fill="#0425c1" face-name="DoodlePenLimited Regular" halo-fill="#ffffff" halo-radius="2" halo-opacity="0.8" orientation="[ORIENTATIO]" ><![CDATA[[HTMLNAME]]]></TextSymbolizer>
+  </Rule>
+  <Rule>
+    <Filter>([FONTHEIGHT] = 'Medium') and ([FEATCODE] = 15803) and ([HTMLNAME] = 'Salisbury Crags')</Filter>
+    <PointSymbolizer file="img/coffee-stain.png" ignore-placement="true" opacity="0.6" comp-op="multiply" />
+    <TextSymbolizer size="16" fill="#073911" orientation="7" face-name="DoodlePenLimited Regular" halo-fill="#ffffff" halo-radius="2" halo-opacity="0.8" ><![CDATA[[HTMLNAME]]]></TextSymbolizer>
+  </Rule>
+  <Rule>
+    <Filter>([FONTHEIGHT] = 'Medium') and ([FEATCODE] = 15803) and ([HTMLNAME] = 'Corstorphine Hill')</Filter>
+    <PointSymbolizer file="img/coffee-stain.png" ignore-placement="true" opacity="0.6" comp-op="multiply" />
+    <TextSymbolizer size="16" fill="#073911" orientation="7" face-name="DoodlePenLimited Regular" halo-fill="#ffffff" halo-radius="2" halo-opacity="0.8" ><![CDATA[[HTMLNAME]]]></TextSymbolizer>
+  </Rule>
+  <Rule>
+    <Filter>([FONTHEIGHT] = 'Medium') and ([FEATCODE] = 15803) and ([HTMLNAME] = 'Broomhills Cottages')</Filter>
+    <PointSymbolizer file="img/coffee-stain.png" ignore-placement="true" opacity="0.6" comp-op="multiply" />
+    <TextSymbolizer size="16" fill="#073911" orientation="7" face-name="DoodlePenLimited Regular" halo-fill="#ffffff" halo-radius="2" halo-opacity="0.8" ><![CDATA[[HTMLNAME]]]></TextSymbolizer>
+  </Rule>
+  <Rule>
+    <Filter>([FONTHEIGHT] = 'Medium') and ([FEATCODE] = 15803)</Filter>
+    <TextSymbolizer size="16" fill="#073911" orientation="7" face-name="DoodlePenLimited Regular" halo-fill="#ffffff" halo-radius="2" halo-opacity="0.8" ><![CDATA[[HTMLNAME]]]></TextSymbolizer>
+  </Rule>
+  <Rule>
+    <Filter>([FONTHEIGHT] = 'Medium') and ([FEATCODE] = 15802) and ([HTMLNAME] = 'Salisbury Crags')</Filter>
+    <PointSymbolizer file="img/coffee-stain.png" ignore-placement="true" opacity="0.6" comp-op="multiply" />
+    <TextSymbolizer size="16" fill="#0d0d0e" face-name="DoodlePenLimited Regular" halo-fill="#ffffff" halo-radius="2" halo-opacity="0.8" orientation="[ORIENTATIO]" ><![CDATA[[HTMLNAME]]]></TextSymbolizer>
+  </Rule>
+  <Rule>
+    <Filter>([FONTHEIGHT] = 'Medium') and ([FEATCODE] = 15802) and ([HTMLNAME] = 'Corstorphine Hill')</Filter>
+    <PointSymbolizer file="img/coffee-stain.png" ignore-placement="true" opacity="0.6" comp-op="multiply" />
+    <TextSymbolizer size="16" fill="#0d0d0e" face-name="DoodlePenLimited Regular" halo-fill="#ffffff" halo-radius="2" halo-opacity="0.8" orientation="[ORIENTATIO]" ><![CDATA[[HTMLNAME]]]></TextSymbolizer>
+  </Rule>
+  <Rule>
+    <Filter>([FONTHEIGHT] = 'Medium') and ([FEATCODE] = 15802) and ([HTMLNAME] = 'Broomhills Cottages')</Filter>
+    <PointSymbolizer file="img/coffee-stain.png" ignore-placement="true" opacity="0.6" comp-op="multiply" />
+    <TextSymbolizer size="16" fill="#0d0d0e" face-name="DoodlePenLimited Regular" halo-fill="#ffffff" halo-radius="2" halo-opacity="0.8" orientation="[ORIENTATIO]" ><![CDATA[[HTMLNAME]]]></TextSymbolizer>
+  </Rule>
+  <Rule>
+    <Filter>([FONTHEIGHT] = 'Medium') and ([FEATCODE] = 15802)</Filter>
+    <TextSymbolizer size="16" fill="#0d0d0e" face-name="DoodlePenLimited Regular" halo-fill="#ffffff" halo-radius="2" halo-opacity="0.8" orientation="[ORIENTATIO]" ><![CDATA[[HTMLNAME]]]></TextSymbolizer>
+  </Rule>
+  <Rule>
+    <Filter>([FONTHEIGHT] = 'Medium') and ([FEATCODE] = 15801) and ([HTMLNAME] = 'Salisbury Crags')</Filter>
+    <PointSymbolizer file="img/coffee-stain.png" ignore-placement="true" opacity="0.6" comp-op="multiply" />
+    <TextSymbolizer size="16" fill="#02125d" orientation="4" face-name="DoodlePenLimited Regular" halo-fill="#ffffff" halo-radius="2" halo-opacity="0.8" ><![CDATA[[HTMLNAME]]]></TextSymbolizer>
+  </Rule>
+  <Rule>
+    <Filter>([FONTHEIGHT] = 'Medium') and ([FEATCODE] = 15801) and ([HTMLNAME] = 'Corstorphine Hill')</Filter>
+    <PointSymbolizer file="img/coffee-stain.png" ignore-placement="true" opacity="0.6" comp-op="multiply" />
+    <TextSymbolizer size="16" fill="#02125d" orientation="4" face-name="DoodlePenLimited Regular" halo-fill="#ffffff" halo-radius="2" halo-opacity="0.8" ><![CDATA[[HTMLNAME]]]></TextSymbolizer>
+  </Rule>
+  <Rule>
+    <Filter>([FONTHEIGHT] = 'Medium') and ([FEATCODE] = 15801) and ([HTMLNAME] = 'Broomhills Cottages')</Filter>
+    <PointSymbolizer file="img/coffee-stain.png" ignore-placement="true" opacity="0.6" comp-op="multiply" />
+    <TextSymbolizer size="16" fill="#02125d" orientation="4" face-name="DoodlePenLimited Regular" halo-fill="#ffffff" halo-radius="2" halo-opacity="0.8" ><![CDATA[[HTMLNAME]]]></TextSymbolizer>
+  </Rule>
+  <Rule>
+    <Filter>([FONTHEIGHT] = 'Medium') and ([FEATCODE] = 15801)</Filter>
+    <TextSymbolizer size="16" fill="#02125d" orientation="4" face-name="DoodlePenLimited Regular" halo-fill="#ffffff" halo-radius="2" halo-opacity="0.8" ><![CDATA[[HTMLNAME]]]></TextSymbolizer>
+  </Rule>
+  <Rule>
+    <Filter>([FONTHEIGHT] = 'Medium') and ([HTMLNAME] = 'Salisbury Crags')</Filter>
+    <PointSymbolizer file="img/coffee-stain.png" ignore-placement="true" opacity="0.6" comp-op="multiply" />
+    <TextSymbolizer size="16" face-name="DoodlePenLimited Regular" halo-fill="#ffffff" halo-radius="2" halo-opacity="0.8" orientation="[ORIENTATIO]" ><![CDATA[[HTMLNAME]]]></TextSymbolizer>
+  </Rule>
+  <Rule>
+    <Filter>([FONTHEIGHT] = 'Medium') and ([HTMLNAME] = 'Corstorphine Hill')</Filter>
+    <PointSymbolizer file="img/coffee-stain.png" ignore-placement="true" opacity="0.6" comp-op="multiply" />
+    <TextSymbolizer size="16" face-name="DoodlePenLimited Regular" halo-fill="#ffffff" halo-radius="2" halo-opacity="0.8" orientation="[ORIENTATIO]" ><![CDATA[[HTMLNAME]]]></TextSymbolizer>
+  </Rule>
+  <Rule>
+    <Filter>([FONTHEIGHT] = 'Medium') and ([HTMLNAME] = 'Broomhills Cottages')</Filter>
+    <PointSymbolizer file="img/coffee-stain.png" ignore-placement="true" opacity="0.6" comp-op="multiply" />
+    <TextSymbolizer size="16" face-name="DoodlePenLimited Regular" halo-fill="#ffffff" halo-radius="2" halo-opacity="0.8" orientation="[ORIENTATIO]" ><![CDATA[[HTMLNAME]]]></TextSymbolizer>
+  </Rule>
+  <Rule>
+    <Filter>([FONTHEIGHT] = 'Medium')</Filter>
+    <TextSymbolizer size="16" face-name="DoodlePenLimited Regular" halo-fill="#ffffff" halo-radius="2" halo-opacity="0.8" orientation="[ORIENTATIO]" ><![CDATA[[HTMLNAME]]]></TextSymbolizer>
+  </Rule>
+  <Rule>
+    <Filter>([FONTHEIGHT] = 'Small') and ([FEATCODE] = 15805) and ([HTMLNAME] = 'Salisbury Crags')</Filter>
+    <PointSymbolizer file="img/coffee-stain.png" ignore-placement="true" opacity="0.6" comp-op="multiply" />
+    <TextSymbolizer size="12" fill="#57575d" face-name="DoodlePenLimited Regular" halo-fill="#ffffff" halo-radius="2" halo-opacity="0.8" orientation="[ORIENTATIO]" ><![CDATA[[HTMLNAME]]]></TextSymbolizer>
+  </Rule>
+  <Rule>
+    <Filter>([FONTHEIGHT] = 'Small') and ([FEATCODE] = 15805) and ([HTMLNAME] = 'Corstorphine Hill')</Filter>
+    <PointSymbolizer file="img/coffee-stain.png" ignore-placement="true" opacity="0.6" comp-op="multiply" />
+    <TextSymbolizer size="12" fill="#57575d" face-name="DoodlePenLimited Regular" halo-fill="#ffffff" halo-radius="2" halo-opacity="0.8" orientation="[ORIENTATIO]" ><![CDATA[[HTMLNAME]]]></TextSymbolizer>
+  </Rule>
+  <Rule>
+    <Filter>([FONTHEIGHT] = 'Small') and ([FEATCODE] = 15805) and ([HTMLNAME] = 'Broomhills Cottages')</Filter>
+    <PointSymbolizer file="img/coffee-stain.png" ignore-placement="true" opacity="0.6" comp-op="multiply" />
+    <TextSymbolizer size="12" fill="#57575d" face-name="DoodlePenLimited Regular" halo-fill="#ffffff" halo-radius="2" halo-opacity="0.8" orientation="[ORIENTATIO]" ><![CDATA[[HTMLNAME]]]></TextSymbolizer>
+  </Rule>
+  <Rule>
+    <Filter>([FONTHEIGHT] = 'Small') and ([FEATCODE] = 15805)</Filter>
+    <TextSymbolizer size="12" fill="#57575d" face-name="DoodlePenLimited Regular" halo-fill="#ffffff" halo-radius="2" halo-opacity="0.8" orientation="[ORIENTATIO]" ><![CDATA[[HTMLNAME]]]></TextSymbolizer>
+  </Rule>
+  <Rule>
+    <Filter>([FONTHEIGHT] = 'Small') and ([FEATCODE] = 15804) and ([HTMLNAME] = 'Salisbury Crags')</Filter>
+    <PointSymbolizer file="img/coffee-stain.png" ignore-placement="true" opacity="0.6" comp-op="multiply" />
+    <TextSymbolizer size="12" fill="#0425c1" face-name="DoodlePenLimited Regular" halo-fill="#ffffff" halo-radius="2" halo-opacity="0.8" orientation="[ORIENTATIO]" ><![CDATA[[HTMLNAME]]]></TextSymbolizer>
+  </Rule>
+  <Rule>
+    <Filter>([FONTHEIGHT] = 'Small') and ([FEATCODE] = 15804) and ([HTMLNAME] = 'Corstorphine Hill')</Filter>
+    <PointSymbolizer file="img/coffee-stain.png" ignore-placement="true" opacity="0.6" comp-op="multiply" />
+    <TextSymbolizer size="12" fill="#0425c1" face-name="DoodlePenLimited Regular" halo-fill="#ffffff" halo-radius="2" halo-opacity="0.8" orientation="[ORIENTATIO]" ><![CDATA[[HTMLNAME]]]></TextSymbolizer>
+  </Rule>
+  <Rule>
+    <Filter>([FONTHEIGHT] = 'Small') and ([FEATCODE] = 15804) and ([HTMLNAME] = 'Broomhills Cottages')</Filter>
+    <PointSymbolizer file="img/coffee-stain.png" ignore-placement="true" opacity="0.6" comp-op="multiply" />
+    <TextSymbolizer size="12" fill="#0425c1" face-name="DoodlePenLimited Regular" halo-fill="#ffffff" halo-radius="2" halo-opacity="0.8" orientation="[ORIENTATIO]" ><![CDATA[[HTMLNAME]]]></TextSymbolizer>
+  </Rule>
+  <Rule>
+    <Filter>([FONTHEIGHT] = 'Small') and ([FEATCODE] = 15804)</Filter>
+    <TextSymbolizer size="12" fill="#0425c1" face-name="DoodlePenLimited Regular" halo-fill="#ffffff" halo-radius="2" halo-opacity="0.8" orientation="[ORIENTATIO]" ><![CDATA[[HTMLNAME]]]></TextSymbolizer>
+  </Rule>
+  <Rule>
+    <Filter>([FONTHEIGHT] = 'Small') and ([FEATCODE] = 15803) and ([HTMLNAME] = 'Salisbury Crags')</Filter>
+    <PointSymbolizer file="img/coffee-stain.png" ignore-placement="true" opacity="0.6" comp-op="multiply" />
+    <TextSymbolizer size="12" fill="#073911" orientation="7" face-name="DoodlePenLimited Regular" halo-fill="#ffffff" halo-radius="2" halo-opacity="0.8" ><![CDATA[[HTMLNAME]]]></TextSymbolizer>
+  </Rule>
+  <Rule>
+    <Filter>([FONTHEIGHT] = 'Small') and ([FEATCODE] = 15803) and ([HTMLNAME] = 'Corstorphine Hill')</Filter>
+    <PointSymbolizer file="img/coffee-stain.png" ignore-placement="true" opacity="0.6" comp-op="multiply" />
+    <TextSymbolizer size="12" fill="#073911" orientation="7" face-name="DoodlePenLimited Regular" halo-fill="#ffffff" halo-radius="2" halo-opacity="0.8" ><![CDATA[[HTMLNAME]]]></TextSymbolizer>
+  </Rule>
+  <Rule>
+    <Filter>([FONTHEIGHT] = 'Small') and ([FEATCODE] = 15803) and ([HTMLNAME] = 'Broomhills Cottages')</Filter>
+    <PointSymbolizer file="img/coffee-stain.png" ignore-placement="true" opacity="0.6" comp-op="multiply" />
+    <TextSymbolizer size="12" fill="#073911" orientation="7" face-name="DoodlePenLimited Regular" halo-fill="#ffffff" halo-radius="2" halo-opacity="0.8" ><![CDATA[[HTMLNAME]]]></TextSymbolizer>
+  </Rule>
+  <Rule>
+    <Filter>([FONTHEIGHT] = 'Small') and ([FEATCODE] = 15803)</Filter>
+    <TextSymbolizer size="12" fill="#073911" orientation="7" face-name="DoodlePenLimited Regular" halo-fill="#ffffff" halo-radius="2" halo-opacity="0.8" ><![CDATA[[HTMLNAME]]]></TextSymbolizer>
+  </Rule>
+  <Rule>
+    <Filter>([FONTHEIGHT] = 'Small') and ([FEATCODE] = 15802) and ([HTMLNAME] = 'Salisbury Crags')</Filter>
+    <PointSymbolizer file="img/coffee-stain.png" ignore-placement="true" opacity="0.6" comp-op="multiply" />
+    <TextSymbolizer size="12" fill="#0d0d0e" face-name="DoodlePenLimited Regular" halo-fill="#ffffff" halo-radius="2" halo-opacity="0.8" orientation="[ORIENTATIO]" ><![CDATA[[HTMLNAME]]]></TextSymbolizer>
+  </Rule>
+  <Rule>
+    <Filter>([FONTHEIGHT] = 'Small') and ([FEATCODE] = 15802) and ([HTMLNAME] = 'Corstorphine Hill')</Filter>
+    <PointSymbolizer file="img/coffee-stain.png" ignore-placement="true" opacity="0.6" comp-op="multiply" />
+    <TextSymbolizer size="12" fill="#0d0d0e" face-name="DoodlePenLimited Regular" halo-fill="#ffffff" halo-radius="2" halo-opacity="0.8" orientation="[ORIENTATIO]" ><![CDATA[[HTMLNAME]]]></TextSymbolizer>
+  </Rule>
+  <Rule>
+    <Filter>([FONTHEIGHT] = 'Small') and ([FEATCODE] = 15802) and ([HTMLNAME] = 'Broomhills Cottages')</Filter>
+    <PointSymbolizer file="img/coffee-stain.png" ignore-placement="true" opacity="0.6" comp-op="multiply" />
+    <TextSymbolizer size="12" fill="#0d0d0e" face-name="DoodlePenLimited Regular" halo-fill="#ffffff" halo-radius="2" halo-opacity="0.8" orientation="[ORIENTATIO]" ><![CDATA[[HTMLNAME]]]></TextSymbolizer>
+  </Rule>
+  <Rule>
+    <Filter>([FONTHEIGHT] = 'Small') and ([FEATCODE] = 15802)</Filter>
+    <TextSymbolizer size="12" fill="#0d0d0e" face-name="DoodlePenLimited Regular" halo-fill="#ffffff" halo-radius="2" halo-opacity="0.8" orientation="[ORIENTATIO]" ><![CDATA[[HTMLNAME]]]></TextSymbolizer>
+  </Rule>
+  <Rule>
+    <Filter>([FONTHEIGHT] = 'Small') and ([FEATCODE] = 15801) and ([HTMLNAME] = 'Salisbury Crags')</Filter>
+    <PointSymbolizer file="img/coffee-stain.png" ignore-placement="true" opacity="0.6" comp-op="multiply" />
+    <TextSymbolizer size="12" fill="#02125d" orientation="4" face-name="DoodlePenLimited Regular" halo-fill="#ffffff" halo-radius="2" halo-opacity="0.8" ><![CDATA[[HTMLNAME]]]></TextSymbolizer>
+  </Rule>
+  <Rule>
+    <Filter>([FONTHEIGHT] = 'Small') and ([FEATCODE] = 15801) and ([HTMLNAME] = 'Corstorphine Hill')</Filter>
+    <PointSymbolizer file="img/coffee-stain.png" ignore-placement="true" opacity="0.6" comp-op="multiply" />
+    <TextSymbolizer size="12" fill="#02125d" orientation="4" face-name="DoodlePenLimited Regular" halo-fill="#ffffff" halo-radius="2" halo-opacity="0.8" ><![CDATA[[HTMLNAME]]]></TextSymbolizer>
+  </Rule>
+  <Rule>
+    <Filter>([FONTHEIGHT] = 'Small') and ([FEATCODE] = 15801) and ([HTMLNAME] = 'Broomhills Cottages')</Filter>
+    <PointSymbolizer file="img/coffee-stain.png" ignore-placement="true" opacity="0.6" comp-op="multiply" />
+    <TextSymbolizer size="12" fill="#02125d" orientation="4" face-name="DoodlePenLimited Regular" halo-fill="#ffffff" halo-radius="2" halo-opacity="0.8" ><![CDATA[[HTMLNAME]]]></TextSymbolizer>
+  </Rule>
+  <Rule>
+    <Filter>([FONTHEIGHT] = 'Small') and ([FEATCODE] = 15801)</Filter>
+    <TextSymbolizer size="12" fill="#02125d" orientation="4" face-name="DoodlePenLimited Regular" halo-fill="#ffffff" halo-radius="2" halo-opacity="0.8" ><![CDATA[[HTMLNAME]]]></TextSymbolizer>
+  </Rule>
+  <Rule>
+    <Filter>([FONTHEIGHT] = 'Small') and ([HTMLNAME] = 'Salisbury Crags')</Filter>
+    <PointSymbolizer file="img/coffee-stain.png" ignore-placement="true" opacity="0.6" comp-op="multiply" />
+    <TextSymbolizer size="12" face-name="DoodlePenLimited Regular" halo-fill="#ffffff" halo-radius="2" halo-opacity="0.8" orientation="[ORIENTATIO]" ><![CDATA[[HTMLNAME]]]></TextSymbolizer>
+  </Rule>
+  <Rule>
+    <Filter>([FONTHEIGHT] = 'Small') and ([HTMLNAME] = 'Corstorphine Hill')</Filter>
+    <PointSymbolizer file="img/coffee-stain.png" ignore-placement="true" opacity="0.6" comp-op="multiply" />
+    <TextSymbolizer size="12" face-name="DoodlePenLimited Regular" halo-fill="#ffffff" halo-radius="2" halo-opacity="0.8" orientation="[ORIENTATIO]" ><![CDATA[[HTMLNAME]]]></TextSymbolizer>
+  </Rule>
+  <Rule>
+    <Filter>([FONTHEIGHT] = 'Small') and ([HTMLNAME] = 'Broomhills Cottages')</Filter>
+    <PointSymbolizer file="img/coffee-stain.png" ignore-placement="true" opacity="0.6" comp-op="multiply" />
+    <TextSymbolizer size="12" face-name="DoodlePenLimited Regular" halo-fill="#ffffff" halo-radius="2" halo-opacity="0.8" orientation="[ORIENTATIO]" ><![CDATA[[HTMLNAME]]]></TextSymbolizer>
+  </Rule>
+  <Rule>
+    <Filter>([FONTHEIGHT] = 'Small')</Filter>
+    <TextSymbolizer size="12" face-name="DoodlePenLimited Regular" halo-fill="#ffffff" halo-radius="2" halo-opacity="0.8" orientation="[ORIENTATIO]" ><![CDATA[[HTMLNAME]]]></TextSymbolizer>
+  </Rule>
+  <Rule>
+    <Filter>([FEATCODE] = 15805) and ([HTMLNAME] = 'Salisbury Crags')</Filter>
+    <PointSymbolizer file="img/coffee-stain.png" ignore-placement="true" opacity="0.6" comp-op="multiply" />
+    <TextSymbolizer fill="#57575d" face-name="DoodlePenLimited Regular" halo-fill="#ffffff" halo-radius="2" halo-opacity="0.8" orientation="[ORIENTATIO]" ><![CDATA[[HTMLNAME]]]></TextSymbolizer>
+  </Rule>
+  <Rule>
+    <Filter>([FEATCODE] = 15805) and ([HTMLNAME] = 'Corstorphine Hill')</Filter>
+    <PointSymbolizer file="img/coffee-stain.png" ignore-placement="true" opacity="0.6" comp-op="multiply" />
+    <TextSymbolizer fill="#57575d" face-name="DoodlePenLimited Regular" halo-fill="#ffffff" halo-radius="2" halo-opacity="0.8" orientation="[ORIENTATIO]" ><![CDATA[[HTMLNAME]]]></TextSymbolizer>
+  </Rule>
+  <Rule>
+    <Filter>([FEATCODE] = 15805) and ([HTMLNAME] = 'Broomhills Cottages')</Filter>
+    <PointSymbolizer file="img/coffee-stain.png" ignore-placement="true" opacity="0.6" comp-op="multiply" />
+    <TextSymbolizer fill="#57575d" face-name="DoodlePenLimited Regular" halo-fill="#ffffff" halo-radius="2" halo-opacity="0.8" orientation="[ORIENTATIO]" ><![CDATA[[HTMLNAME]]]></TextSymbolizer>
+  </Rule>
+  <Rule>
+    <Filter>([FEATCODE] = 15805)</Filter>
+    <TextSymbolizer fill="#57575d" face-name="DoodlePenLimited Regular" halo-fill="#ffffff" halo-radius="2" halo-opacity="0.8" orientation="[ORIENTATIO]" ><![CDATA[[HTMLNAME]]]></TextSymbolizer>
+  </Rule>
+  <Rule>
+    <Filter>([FEATCODE] = 15804) and ([HTMLNAME] = 'Salisbury Crags')</Filter>
+    <PointSymbolizer file="img/coffee-stain.png" ignore-placement="true" opacity="0.6" comp-op="multiply" />
+    <TextSymbolizer fill="#0425c1" face-name="DoodlePenLimited Regular" halo-fill="#ffffff" halo-radius="2" halo-opacity="0.8" orientation="[ORIENTATIO]" ><![CDATA[[HTMLNAME]]]></TextSymbolizer>
+  </Rule>
+  <Rule>
+    <Filter>([FEATCODE] = 15804) and ([HTMLNAME] = 'Corstorphine Hill')</Filter>
+    <PointSymbolizer file="img/coffee-stain.png" ignore-placement="true" opacity="0.6" comp-op="multiply" />
+    <TextSymbolizer fill="#0425c1" face-name="DoodlePenLimited Regular" halo-fill="#ffffff" halo-radius="2" halo-opacity="0.8" orientation="[ORIENTATIO]" ><![CDATA[[HTMLNAME]]]></TextSymbolizer>
+  </Rule>
+  <Rule>
+    <Filter>([FEATCODE] = 15804) and ([HTMLNAME] = 'Broomhills Cottages')</Filter>
+    <PointSymbolizer file="img/coffee-stain.png" ignore-placement="true" opacity="0.6" comp-op="multiply" />
+    <TextSymbolizer fill="#0425c1" face-name="DoodlePenLimited Regular" halo-fill="#ffffff" halo-radius="2" halo-opacity="0.8" orientation="[ORIENTATIO]" ><![CDATA[[HTMLNAME]]]></TextSymbolizer>
+  </Rule>
+  <Rule>
+    <Filter>([FEATCODE] = 15804)</Filter>
+    <TextSymbolizer fill="#0425c1" face-name="DoodlePenLimited Regular" halo-fill="#ffffff" halo-radius="2" halo-opacity="0.8" orientation="[ORIENTATIO]" ><![CDATA[[HTMLNAME]]]></TextSymbolizer>
+  </Rule>
+  <Rule>
+    <Filter>([FEATCODE] = 15803) and ([HTMLNAME] = 'Salisbury Crags')</Filter>
+    <PointSymbolizer file="img/coffee-stain.png" ignore-placement="true" opacity="0.6" comp-op="multiply" />
+    <TextSymbolizer fill="#073911" orientation="7" face-name="DoodlePenLimited Regular" halo-fill="#ffffff" halo-radius="2" halo-opacity="0.8" ><![CDATA[[HTMLNAME]]]></TextSymbolizer>
+  </Rule>
+  <Rule>
+    <Filter>([FEATCODE] = 15803) and ([HTMLNAME] = 'Corstorphine Hill')</Filter>
+    <PointSymbolizer file="img/coffee-stain.png" ignore-placement="true" opacity="0.6" comp-op="multiply" />
+    <TextSymbolizer fill="#073911" orientation="7" face-name="DoodlePenLimited Regular" halo-fill="#ffffff" halo-radius="2" halo-opacity="0.8" ><![CDATA[[HTMLNAME]]]></TextSymbolizer>
+  </Rule>
+  <Rule>
+    <Filter>([FEATCODE] = 15803) and ([HTMLNAME] = 'Broomhills Cottages')</Filter>
+    <PointSymbolizer file="img/coffee-stain.png" ignore-placement="true" opacity="0.6" comp-op="multiply" />
+    <TextSymbolizer fill="#073911" orientation="7" face-name="DoodlePenLimited Regular" halo-fill="#ffffff" halo-radius="2" halo-opacity="0.8" ><![CDATA[[HTMLNAME]]]></TextSymbolizer>
+  </Rule>
+  <Rule>
+    <Filter>([FEATCODE] = 15803)</Filter>
+    <TextSymbolizer fill="#073911" orientation="7" face-name="DoodlePenLimited Regular" halo-fill="#ffffff" halo-radius="2" halo-opacity="0.8" ><![CDATA[[HTMLNAME]]]></TextSymbolizer>
+  </Rule>
+  <Rule>
+    <Filter>([FEATCODE] = 15802) and ([HTMLNAME] = 'Salisbury Crags')</Filter>
+    <PointSymbolizer file="img/coffee-stain.png" ignore-placement="true" opacity="0.6" comp-op="multiply" />
+    <TextSymbolizer fill="#0d0d0e" face-name="DoodlePenLimited Regular" halo-fill="#ffffff" halo-radius="2" halo-opacity="0.8" orientation="[ORIENTATIO]" ><![CDATA[[HTMLNAME]]]></TextSymbolizer>
+  </Rule>
+  <Rule>
+    <Filter>([FEATCODE] = 15802) and ([HTMLNAME] = 'Corstorphine Hill')</Filter>
+    <PointSymbolizer file="img/coffee-stain.png" ignore-placement="true" opacity="0.6" comp-op="multiply" />
+    <TextSymbolizer fill="#0d0d0e" face-name="DoodlePenLimited Regular" halo-fill="#ffffff" halo-radius="2" halo-opacity="0.8" orientation="[ORIENTATIO]" ><![CDATA[[HTMLNAME]]]></TextSymbolizer>
+  </Rule>
+  <Rule>
+    <Filter>([FEATCODE] = 15802) and ([HTMLNAME] = 'Broomhills Cottages')</Filter>
+    <PointSymbolizer file="img/coffee-stain.png" ignore-placement="true" opacity="0.6" comp-op="multiply" />
+    <TextSymbolizer fill="#0d0d0e" face-name="DoodlePenLimited Regular" halo-fill="#ffffff" halo-radius="2" halo-opacity="0.8" orientation="[ORIENTATIO]" ><![CDATA[[HTMLNAME]]]></TextSymbolizer>
+  </Rule>
+  <Rule>
+    <Filter>([FEATCODE] = 15802)</Filter>
+    <TextSymbolizer fill="#0d0d0e" face-name="DoodlePenLimited Regular" halo-fill="#ffffff" halo-radius="2" halo-opacity="0.8" orientation="[ORIENTATIO]" ><![CDATA[[HTMLNAME]]]></TextSymbolizer>
+  </Rule>
+  <Rule>
+    <Filter>([FEATCODE] = 15801) and ([HTMLNAME] = 'Salisbury Crags')</Filter>
+    <PointSymbolizer file="img/coffee-stain.png" ignore-placement="true" opacity="0.6" comp-op="multiply" />
+    <TextSymbolizer fill="#02125d" orientation="4" face-name="DoodlePenLimited Regular" halo-fill="#ffffff" halo-radius="2" halo-opacity="0.8" ><![CDATA[[HTMLNAME]]]></TextSymbolizer>
+  </Rule>
+  <Rule>
+    <Filter>([FEATCODE] = 15801) and ([HTMLNAME] = 'Corstorphine Hill')</Filter>
+    <PointSymbolizer file="img/coffee-stain.png" ignore-placement="true" opacity="0.6" comp-op="multiply" />
+    <TextSymbolizer fill="#02125d" orientation="4" face-name="DoodlePenLimited Regular" halo-fill="#ffffff" halo-radius="2" halo-opacity="0.8" ><![CDATA[[HTMLNAME]]]></TextSymbolizer>
+  </Rule>
+  <Rule>
+    <Filter>([FEATCODE] = 15801) and ([HTMLNAME] = 'Broomhills Cottages')</Filter>
+    <PointSymbolizer file="img/coffee-stain.png" ignore-placement="true" opacity="0.6" comp-op="multiply" />
+    <TextSymbolizer fill="#02125d" orientation="4" face-name="DoodlePenLimited Regular" halo-fill="#ffffff" halo-radius="2" halo-opacity="0.8" ><![CDATA[[HTMLNAME]]]></TextSymbolizer>
+  </Rule>
+  <Rule>
+    <Filter>([FEATCODE] = 15801)</Filter>
+    <TextSymbolizer fill="#02125d" orientation="4" face-name="DoodlePenLimited Regular" halo-fill="#ffffff" halo-radius="2" halo-opacity="0.8" ><![CDATA[[HTMLNAME]]]></TextSymbolizer>
+  </Rule>
+  <Rule>
+    <Filter>([HTMLNAME] = 'Salisbury Crags')</Filter>
+    <PointSymbolizer file="img/coffee-stain.png" ignore-placement="true" opacity="0.6" comp-op="multiply" />
+    <TextSymbolizer face-name="DoodlePenLimited Regular" halo-fill="#ffffff" halo-radius="2" halo-opacity="0.8" orientation="[ORIENTATIO]" ><![CDATA[[HTMLNAME]]]></TextSymbolizer>
+  </Rule>
+  <Rule>
+    <Filter>([HTMLNAME] = 'Corstorphine Hill')</Filter>
+    <PointSymbolizer file="img/coffee-stain.png" ignore-placement="true" opacity="0.6" comp-op="multiply" />
+    <TextSymbolizer face-name="DoodlePenLimited Regular" halo-fill="#ffffff" halo-radius="2" halo-opacity="0.8" orientation="[ORIENTATIO]" ><![CDATA[[HTMLNAME]]]></TextSymbolizer>
+  </Rule>
+  <Rule>
+    <Filter>([HTMLNAME] = 'Broomhills Cottages')</Filter>
+    <PointSymbolizer file="img/coffee-stain.png" ignore-placement="true" opacity="0.6" comp-op="multiply" />
+    <TextSymbolizer face-name="DoodlePenLimited Regular" halo-fill="#ffffff" halo-radius="2" halo-opacity="0.8" orientation="[ORIENTATIO]" ><![CDATA[[HTMLNAME]]]></TextSymbolizer>
+  </Rule>
+  <Rule>
+    <TextSymbolizer face-name="DoodlePenLimited Regular" halo-fill="#ffffff" halo-radius="2" halo-opacity="0.8" orientation="[ORIENTATIO]" ><![CDATA[[HTMLNAME]]]></TextSymbolizer>
+  </Rule>
+</Style>
+<Layer name="namedplace"
+  srs="+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0.0 +k=1.0 +units=m +nadgrids=@null +wktext +no_defs +over">
+    <StyleName>namedplace</StyleName>  </Layer>
+
+<Style name="functionalsite-labels" filter-mode="first">
+  <Rule>
+    <MaxScaleDenominator>12500</MaxScaleDenominator>
+    <Filter>([HTMLNAME] = 'Corstorphine Hill')</Filter>
+    <PointSymbolizer file="img/coffee-stain.png" ignore-placement="true" opacity="0.6" comp-op="multiply" />
+    <TextSymbolizer face-name="Biro Script reduced Regular" fill="#6f0707" size="18" orientation="7" wrap-width="100" line-spacing="-15" halo-fill="#ffffff" halo-radius="2" halo-opacity="0.4" ><![CDATA[[DISTNAME]]]></TextSymbolizer>
+  </Rule>
+  <Rule>
+    <MinScaleDenominator>12500</MinScaleDenominator>
+    <Filter>([HTMLNAME] = 'Corstorphine Hill')</Filter>
+    <PointSymbolizer file="img/coffee-stain.png" ignore-placement="true" opacity="0.6" comp-op="multiply" />
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>12500</MaxScaleDenominator>
+    <Filter>([HTMLNAME] = 'Broomhills Cottages')</Filter>
+    <PointSymbolizer file="img/coffee-stain.png" ignore-placement="true" opacity="0.6" comp-op="multiply" />
+    <TextSymbolizer face-name="Biro Script reduced Regular" fill="#6f0707" size="18" orientation="7" wrap-width="100" line-spacing="-15" halo-fill="#ffffff" halo-radius="2" halo-opacity="0.4" ><![CDATA[[DISTNAME]]]></TextSymbolizer>
+  </Rule>
+  <Rule>
+    <MinScaleDenominator>12500</MinScaleDenominator>
+    <Filter>([HTMLNAME] = 'Broomhills Cottages')</Filter>
+    <PointSymbolizer file="img/coffee-stain.png" ignore-placement="true" opacity="0.6" comp-op="multiply" />
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>12500</MaxScaleDenominator>
+    <TextSymbolizer face-name="Biro Script reduced Regular" fill="#6f0707" size="18" orientation="7" wrap-width="100" line-spacing="-15" halo-fill="#ffffff" halo-radius="2" halo-opacity="0.4" ><![CDATA[[DISTNAME]]]></TextSymbolizer>
+  </Rule>
+</Style>
+<Layer name="functionalsite-labels"
+  srs="+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0.0 +k=1.0 +units=m +nadgrids=@null +wktext +no_defs +over">
+    <StyleName>functionalsite-labels</StyleName>  </Layer>
+
+<Style name="roadlabels" filter-mode="first">
+  <Rule>
+    <Filter>([HTMLNAME] = 'Corstorphine Hill')</Filter>
+    <PointSymbolizer file="img/coffee-stain.png" ignore-placement="true" opacity="0.6" comp-op="multiply" />
+  </Rule>
+  <Rule>
+    <Filter>([HTMLNAME] = 'Broomhills Cottages')</Filter>
+    <PointSymbolizer file="img/coffee-stain.png" ignore-placement="true" opacity="0.6" comp-op="multiply" />
+  </Rule>
+</Style>
+<Layer name="roadlabels"
+  srs="+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0.0 +k=1.0 +units=m +nadgrids=@null +wktext +no_defs +over">
+    <StyleName>roadlabels</StyleName>  </Layer>
+
+</Map>

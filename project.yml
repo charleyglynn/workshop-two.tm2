@@ -1,0 +1,25 @@
+_prefs: 
+  mapid: ''
+  saveCenter: false
+_properties: {}
+attribution: (c) Ordnance Survey 2015
+bounds: 
+  - -180
+  - -85.0511
+  - 180
+  - 85.0511
+center: 
+  - -3.1869
+  - 55.9488
+  - 15
+description: Now, let's make an awesome map with OS Open Map - Local
+format: "png8:m=h"
+interactivity_layer: ''
+layers: null
+maxzoom: 19
+minzoom: 14
+name: workshop two
+source: "mapbox:///workshops.cc54b1f4"
+styles: 
+  - style.mss
+template: ''
