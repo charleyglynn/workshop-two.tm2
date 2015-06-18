@@ -10,3 +10,5 @@ The workshop consists of an intro presentation and two workshop activities which
 Please let me know what you think and also raise an issue if you find any errors or mistakes.
 
 Happy Mapping :)
+
+![iamge1](https://pbs.twimg.com/media/CD75dWuWMAAbBq9.png:large)
